@@ -1,0 +1,26 @@
+[35m[1mConsolidate compiler generated dependencies of target ekf_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/ekf_node.dir/src/ekf_node.cpp.o[0m
+[01m[K/home/pranav/the_mapper/src/ekf_fusion/src/ekf_node.cpp:[m[K In member function ‘[01m[Kvoid EKFNode::predict(double, double, double, double)[m[K’:
+[01m[K/home/pranav/the_mapper/src/ekf_fusion/src/ekf_node.cpp:64:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kyaw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   64 |         double [01;35m[Kyaw[m[K = state_(4);
+      |                [01;35m[K^~~[m[K
+[100%] [32m[1mLinking CXX executable ekf_node[0m
+[100%] Built target ekf_node
+-- Install configuration: ""
+-- Installing: /home/pranav/the_mapper/install/ekf_fusion/lib/ekf_fusion/ekf_node
+-- Set runtime path of "/home/pranav/the_mapper/install/ekf_fusion/lib/ekf_fusion/ekf_node" to ""
+-- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ament_index/resource_index/package_run_dependencies/ekf_fusion
+-- Installing: /home/pranav/the_mapper/install/ekf_fusion/share/ament_index/resource_index/parent_prefix_path/ekf_fusion
+-- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/environment/ament_prefix_path.sh
+-- Installing: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/environment/path.sh
+-- Installing: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/environment/path.dsv
+-- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/local_setup.bash
+-- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/local_setup.sh
+-- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/local_setup.zsh
+-- Installing: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/local_setup.dsv
+-- Installing: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/package.dsv
+-- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ament_index/resource_index/packages/ekf_fusion
+-- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/cmake/ekf_fusionConfig.cmake
+-- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/cmake/ekf_fusionConfig-version.cmake
+-- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/package.xml

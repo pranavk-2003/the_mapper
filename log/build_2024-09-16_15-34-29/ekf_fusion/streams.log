@@ -1,0 +1,25 @@
+[0.019s] Invoking command in '/home/pranav/the_mapper/build/ekf_fusion': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pranav/ws/install/mypkg:/home/pranav/learning_ws/install/mypkg:/opt/ros/humble /usr/bin/cmake --build /home/pranav/the_mapper/build/ekf_fusion -- -j4 -l4
+[0.105s] [ 50%] [32mBuilding CXX object CMakeFiles/ekf_node.dir/src/ekf_node.cpp.o[0m
+[17.953s] [100%] [32m[1mLinking CXX executable ekf_node[0m
+[18.856s] [100%] Built target ekf_node
+[18.873s] Invoked command in '/home/pranav/the_mapper/build/ekf_fusion' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pranav/ws/install/mypkg:/home/pranav/learning_ws/install/mypkg:/opt/ros/humble /usr/bin/cmake --build /home/pranav/the_mapper/build/ekf_fusion -- -j4 -l4
+[18.924s] Invoking command in '/home/pranav/the_mapper/build/ekf_fusion': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pranav/ws/install/mypkg:/home/pranav/learning_ws/install/mypkg:/opt/ros/humble /usr/bin/cmake --install /home/pranav/the_mapper/build/ekf_fusion
+[18.937s] -- Install configuration: ""
+[18.938s] -- Installing: /home/pranav/the_mapper/install/ekf_fusion/lib/ekf_fusion/ekf_node
+[18.953s] -- Set runtime path of "/home/pranav/the_mapper/install/ekf_fusion/lib/ekf_fusion/ekf_node" to ""
+[18.953s] -- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ament_index/resource_index/package_run_dependencies/ekf_fusion
+[18.953s] -- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ament_index/resource_index/parent_prefix_path/ekf_fusion
+[18.953s] -- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/environment/ament_prefix_path.sh
+[18.953s] -- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/environment/ament_prefix_path.dsv
+[18.953s] -- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/environment/path.sh
+[18.953s] -- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/environment/path.dsv
+[18.954s] -- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/local_setup.bash
+[18.954s] -- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/local_setup.sh
+[18.954s] -- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/local_setup.zsh
+[18.954s] -- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/local_setup.dsv
+[18.954s] -- Installing: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/package.dsv
+[18.954s] -- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ament_index/resource_index/packages/ekf_fusion
+[18.954s] -- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/cmake/ekf_fusionConfig.cmake
+[18.954s] -- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/cmake/ekf_fusionConfig-version.cmake
+[18.954s] -- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/package.xml
+[18.959s] Invoked command in '/home/pranav/the_mapper/build/ekf_fusion' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pranav/ws/install/mypkg:/home/pranav/learning_ws/install/mypkg:/opt/ros/humble /usr/bin/cmake --install /home/pranav/the_mapper/build/ekf_fusion

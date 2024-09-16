@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <gazebo reference="base_link">
+        <material>Gazebo/Blue</material>
+    </gazebo>
+
+    <gazebo reference="right_wheel_link">
+        <material>Gazebo/Grey</material>
+    </gazebo>
+
+    <gazebo reference="left_wheel_link">
+        <material>Gazebo/Grey</material>
+    </gazebo>
+
+    <gazebo reference="caster_wheel_link_1">
+        <material>Gazebo/Grey</material>
+        <mu1 value="0.1" />
+        <mu2 value="0.1" />
+    </gazebo>
+    <gazebo reference="caster_wheel_link_2">
+        <material>Gazebo/Grey</material>
+        <mu1 value="0.1" />
+        <mu2 value="0.1" />
+    </gazebo>
+    <gazebo reference="caster_wheel_link_3">
+        <material>Gazebo/Grey</material>
+        <mu1 value="0.1" />
+        <mu2 value="0.1" />
+    </gazebo>
+    <gazebo reference="caster_wheel_link_4">
+        <material>Gazebo/Grey</material>
+        <mu1 value="0.1" />
+        <mu2 value="0.1" />
+    </gazebo>
+    <gazebo reference="lidar_link">
+        <material>Gazebo/Grey</material>
+        <mu1 value="0.1" />
+        <mu2 value="0.1" />
+    </gazebo>
+
+    <gazebo>
+        <plugin name="diff_drive_controller" filename="libgazebo_ros_diff_drive.so">
+            <!-- Update rate in Hz -->
+            <update_rate>50</update_rate>
+            <!-- wheels -->
+            <left_joint>base_left_wheel_joint</left_joint>
+            <right_joint>base_right_wheel_joint</right_joint>
+            <!-- kinematics -->
+            <wheel_separation>0.39</wheel_separation>
+            <wheel_diameter>0.127</wheel_diameter>
+            <!-- output -->
+            <publish_odom>true</publish_odom>
+            <publish_odom_tf>true</publish_odom_tf>
+            <publish_wheel_tf>true</publish_wheel_tf>
+            <odometry_topic>odom</odometry_topic>
+            <odometry_frame>odom</odometry_frame>
+            <robot_base_frame>base_footprint</robot_base_frame>
+            <max_speed>10.0</max_speed> 
+            <max_turning_speed>2.0</max_turning_speed>
+        </plugin>
+    </gazebo>
+    <gazebo reference="imu_link">
+        <gravity>true</gravity>
+        <sensor name="imu_sensor" type="imu">
+            <always_on>true</always_on>
+            <update_rate>50</update_rate>
+            <visualize>true</visualize>
+            <topic>imu1</topic>
+            <plugin name="imu_plugin" filename="libgazebo_ros_imu_sensor.so">
+                <topicName>imu</topicName>
+                <bodyName>imu_link</bodyName>
+                <updateRateHZ>10.0</updateRateHZ>
+                <gaussianNoise>0.0</gaussianNoise>
+                <xyzOffset>0 0 0</xyzOffset>
+                <rpyOffset>0 0 0</rpyOffset>
+                <frameName>imu_link</frameName>
+                <initialOrientationAsReference>false</initialOrientationAsReference>
+            </plugin>
+            <pose>0 0 0 0 0 0</pose>
+        </sensor>
+  </gazebo>
+</robot>

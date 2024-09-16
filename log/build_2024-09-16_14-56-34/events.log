@@ -1,0 +1,155 @@
+[0.000000] (-) TimerEvent: {}
+[0.000393] (-) JobUnselected: {'identifier': 'mapper_bringup'}
+[0.000741] (-) JobUnselected: {'identifier': 'mapper_description'}
+[0.000791] (ekf_fusion) JobQueued: {'identifier': 'ekf_fusion', 'dependencies': OrderedDict()}
+[0.000859] (ekf_fusion) JobStarted: {'identifier': 'ekf_fusion'}
+[0.012390] (ekf_fusion) JobProgress: {'identifier': 'ekf_fusion', 'progress': 'cmake'}
+[0.013189] (ekf_fusion) JobProgress: {'identifier': 'ekf_fusion', 'progress': 'build'}
+[0.014053] (ekf_fusion) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pranav/the_mapper/build/ekf_fusion', '--', '-j4', '-l4'], 'cwd': '/home/pranav/the_mapper/build/ekf_fusion', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'pranav'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pranav/ws/install/usb_cam/lib:/home/pranav/ws/install/my_robot_interfaces/lib:/home/pranav/ws/install/my_cpp_pkg/lib:/home/pranav/ws/src/my_robot_interfaces/install/my_robot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/pranav'), ('OLDPWD', '/home/pranav/the_mapper/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1194'), ('SYSTEMD_EXEC_PID', '1373'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6235'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/pranav/the_mapper/install:/home/pranav/project_robot_ws/install:/home/pranav/ws/install:/home/pranav/ws/src/my_robot_interfaces/install:/home/pranav/learning_ws/install:/home/pranav/amr/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pranav'), ('JOURNAL_STREAM', '8:23138'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'pranav'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/jarvis:@/tmp/.ICE-unix/1346,unix/jarvis:/tmp/.ICE-unix/1346'), ('INVOCATION_ID', '668f92402bcc46fdaa8f67e3bc0313e8'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.LP8WT2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/pranav/the_mapper/install/mapper_bringup:/home/pranav/the_mapper/install/mapper_description:/home/pranav/the_mapper/install/ekf_fusion:/home/pranav/amr/install/amr_bringup:/home/pranav/amr/install/amr_description:/home/pranav/ws/install/usb_cam:/home/pranav/ws/install/my_robot_bringup:/home/pranav/ws/install/mypkg:/home/pranav/ws/install/my_robot_interfaces:/home/pranav/ws/install/my_cpp_pkg:/home/pranav/project_robot_ws/install/project_robot_description:/home/pranav/project_robot_ws/install/my_robot_bringup:/home/pranav/ws/src/my_robot_interfaces/install/my_robot_interfaces:/home/pranav/learning_ws/install/mypkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:a7bfee0d-ee82-45b7-8673-1544f5862a4c'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/pranav/the_mapper/build/ekf_fusion'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pranav/ws/install/mypkg/lib/python3.10/site-packages:/home/pranav/ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/home/pranav/ws/install/my_cpp_pkg/local/lib/python3.10/dist-packages:/home/pranav/ws/src/my_robot_interfaces/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/home/pranav/learning_ws/build/mypkg:/home/pranav/learning_ws/install/mypkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/pranav/the_mapper/install/mapper_bringup:/home/pranav/the_mapper/install/mapper_description:/home/pranav/the_mapper/install/ekf_fusion:/home/pranav/amr/install/amr_bringup:/home/pranav/amr/install/amr_description:/home/pranav/ws/install/usb_cam:/home/pranav/ws/install/my_robot_bringup:/home/pranav/ws/install/my_robot_interfaces:/home/pranav/ws/install/my_cpp_pkg:/home/pranav/project_robot_ws/install/project_robot_description:/home/pranav/project_robot_ws/install/my_robot_bringup:/home/pranav/ws/src/my_robot_interfaces/install/my_robot_interfaces:/home/pranav/ws/install/mypkg:/home/pranav/learning_ws/install/mypkg:/opt/ros/humble')]), 'shell': False}
+[0.055122] (ekf_fusion) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099921] (-) TimerEvent: {}
+[0.198424] (ekf_fusion) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.199929] (-) TimerEvent: {}
+[0.224845] (ekf_fusion) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.227616] (ekf_fusion) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.236424] (ekf_fusion) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.246288] (ekf_fusion) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.257083] (ekf_fusion) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.284349] (ekf_fusion) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.288009] (ekf_fusion) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[0.300815] (ekf_fusion) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.301005] (-) TimerEvent: {}
+[0.348538] (ekf_fusion) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.373555] (ekf_fusion) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.388800] (ekf_fusion) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.403143] (-) TimerEvent: {}
+[0.462448] (ekf_fusion) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[0.464006] (ekf_fusion) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.464332] (ekf_fusion) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[0.464401] (ekf_fusion) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.464902] (ekf_fusion) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.465624] (ekf_fusion) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.465705] (ekf_fusion) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.466700] (ekf_fusion) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.466806] (ekf_fusion) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.478918] (ekf_fusion) StdoutLine: {'line': b'-- Generating done\n'}
+[0.481682] (ekf_fusion) StdoutLine: {'line': b'-- Build files have been written to: /home/pranav/the_mapper/build/ekf_fusion\n'}
+[0.504189] (-) TimerEvent: {}
+[0.526684] (ekf_fusion) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ekf_node.dir/src/ekf_node.cpp.o\x1b[0m\n'}
+[0.604431] (-) TimerEvent: {}
+[0.718049] (-) TimerEvent: {}
+[0.818775] (-) TimerEvent: {}
+[0.919242] (-) TimerEvent: {}
+[1.019711] (-) TimerEvent: {}
+[1.120177] (-) TimerEvent: {}
+[1.221100] (-) TimerEvent: {}
+[1.321717] (-) TimerEvent: {}
+[1.422838] (-) TimerEvent: {}
+[1.523189] (-) TimerEvent: {}
+[1.623805] (-) TimerEvent: {}
+[1.738408] (-) TimerEvent: {}
+[1.838867] (-) TimerEvent: {}
+[1.939472] (-) TimerEvent: {}
+[2.040081] (-) TimerEvent: {}
+[2.140868] (-) TimerEvent: {}
+[2.241380] (-) TimerEvent: {}
+[2.341902] (-) TimerEvent: {}
+[2.442397] (-) TimerEvent: {}
+[2.543299] (-) TimerEvent: {}
+[2.643850] (-) TimerEvent: {}
+[2.744568] (-) TimerEvent: {}
+[2.845062] (-) TimerEvent: {}
+[2.945997] (-) TimerEvent: {}
+[3.046708] (-) TimerEvent: {}
+[3.147648] (-) TimerEvent: {}
+[3.248573] (-) TimerEvent: {}
+[3.349221] (-) TimerEvent: {}
+[3.449698] (-) TimerEvent: {}
+[3.511223] (ekf_fusion) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pranav/the_mapper/src/ekf_fusion/src/ekf_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid EKFNode::lidarCallback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.511469] (ekf_fusion) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pranav/the_mapper/src/ekf_fusion/src/ekf_node.cpp:42:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[3.511540] (ekf_fusion) StderrLine: {'line': b'   42 |         double lidar_x = \x1b[01;31m\x1b[K...\x1b[m\x1b[K;  // Extract from LiDAR processing\n'}
+[3.511600] (ekf_fusion) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[3.511667] (ekf_fusion) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pranav/the_mapper/src/ekf_fusion/src/ekf_node.cpp:43:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[3.511712] (ekf_fusion) StderrLine: {'line': b'   43 |         double lidar_y = \x1b[01;31m\x1b[K...\x1b[m\x1b[K;  // Extract from LiDAR processing\n'}
+[3.511754] (ekf_fusion) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[3.523420] (ekf_fusion) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pranav/the_mapper/src/ekf_fusion/src/ekf_node.cpp:40:69:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.523663] (ekf_fusion) StderrLine: {'line': b'   40 |     void lidarCallback(\x1b[01;35m\x1b[Kconst sensor_msgs::msg::LaserScan::SharedPtr msg\x1b[m\x1b[K) {\n'}
+[3.523736] (ekf_fusion) StderrLine: {'line': b'      |                        \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[3.550171] (-) TimerEvent: {}
+[3.578789] (ekf_fusion) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pranav/the_mapper/src/ekf_fusion/src/ekf_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid EKFNode::predict(double, double, double, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.579172] (ekf_fusion) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pranav/the_mapper/src/ekf_fusion/src/ekf_node.cpp:50:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kyaw\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.579358] (ekf_fusion) StderrLine: {'line': b'   50 |         double \x1b[01;35m\x1b[Kyaw\x1b[m\x1b[K = state_(4);\n'}
+[3.579470] (ekf_fusion) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[3.650557] (-) TimerEvent: {}
+[3.751060] (-) TimerEvent: {}
+[3.851806] (-) TimerEvent: {}
+[3.952666] (-) TimerEvent: {}
+[4.053481] (-) TimerEvent: {}
+[4.154074] (-) TimerEvent: {}
+[4.254619] (-) TimerEvent: {}
+[4.355131] (-) TimerEvent: {}
+[4.455897] (-) TimerEvent: {}
+[4.556747] (-) TimerEvent: {}
+[4.657621] (-) TimerEvent: {}
+[4.758266] (-) TimerEvent: {}
+[4.858743] (-) TimerEvent: {}
+[4.959519] (-) TimerEvent: {}
+[5.059957] (-) TimerEvent: {}
+[5.160799] (-) TimerEvent: {}
+[5.261287] (-) TimerEvent: {}
+[5.361994] (-) TimerEvent: {}
+[5.462561] (-) TimerEvent: {}
+[5.563418] (-) TimerEvent: {}
+[5.664133] (-) TimerEvent: {}
+[5.765400] (-) TimerEvent: {}
+[5.866279] (-) TimerEvent: {}
+[5.966712] (-) TimerEvent: {}
+[6.067503] (-) TimerEvent: {}
+[6.168281] (-) TimerEvent: {}
+[6.269011] (-) TimerEvent: {}
+[6.369660] (-) TimerEvent: {}
+[6.470558] (-) TimerEvent: {}
+[6.571222] (-) TimerEvent: {}
+[6.671790] (-) TimerEvent: {}
+[6.772561] (-) TimerEvent: {}
+[6.873291] (-) TimerEvent: {}
+[6.973894] (-) TimerEvent: {}
+[7.074586] (-) TimerEvent: {}
+[7.175218] (-) TimerEvent: {}
+[7.275886] (-) TimerEvent: {}
+[7.376642] (-) TimerEvent: {}
+[7.477326] (-) TimerEvent: {}
+[7.578115] (-) TimerEvent: {}
+[7.678774] (-) TimerEvent: {}
+[7.779653] (-) TimerEvent: {}
+[7.880259] (-) TimerEvent: {}
+[7.981310] (-) TimerEvent: {}
+[8.085573] (-) TimerEvent: {}
+[8.186129] (-) TimerEvent: {}
+[8.288368] (-) TimerEvent: {}
+[8.388967] (-) TimerEvent: {}
+[8.491480] (-) TimerEvent: {}
+[8.593133] (-) TimerEvent: {}
+[8.698246] (-) TimerEvent: {}
+[8.798914] (-) TimerEvent: {}
+[8.904016] (-) TimerEvent: {}
+[9.013206] (-) TimerEvent: {}
+[9.114325] (-) TimerEvent: {}
+[9.214886] (-) TimerEvent: {}
+[9.315713] (-) TimerEvent: {}
+[9.416205] (-) TimerEvent: {}
+[9.517959] (-) TimerEvent: {}
+[9.618527] (-) TimerEvent: {}
+[9.719091] (-) TimerEvent: {}
+[9.819667] (-) TimerEvent: {}
+[9.920263] (-) TimerEvent: {}
+[10.020850] (-) TimerEvent: {}
+[10.121368] (-) TimerEvent: {}
+[10.222218] (-) TimerEvent: {}
+[10.322065] (ekf_fusion) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ekf_node.dir/build.make:76: CMakeFiles/ekf_node.dir/src/ekf_node.cpp.o] Error 1\n'}
+[10.322264] (-) TimerEvent: {}
+[10.322355] (ekf_fusion) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ekf_node.dir/all] Error 2\n'}
+[10.323014] (ekf_fusion) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[10.325552] (ekf_fusion) CommandEnded: {'returncode': 2}
+[10.377721] (ekf_fusion) JobEnded: {'identifier': 'ekf_fusion', 'rc': 2}
+[10.388851] (-) EventReactorShutdown: {}

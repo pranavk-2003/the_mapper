@@ -1,0 +1,220 @@
+[0.000000] (-) TimerEvent: {}
+[0.000397] (-) JobUnselected: {'identifier': 'mapper_bringup'}
+[0.000452] (-) JobUnselected: {'identifier': 'mapper_description'}
+[0.001158] (ekf_fusion) JobQueued: {'identifier': 'ekf_fusion', 'dependencies': OrderedDict()}
+[0.001220] (ekf_fusion) JobStarted: {'identifier': 'ekf_fusion'}
+[0.017577] (ekf_fusion) JobProgress: {'identifier': 'ekf_fusion', 'progress': 'cmake'}
+[0.018590] (ekf_fusion) JobProgress: {'identifier': 'ekf_fusion', 'progress': 'build'}
+[0.019443] (ekf_fusion) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pranav/the_mapper/build/ekf_fusion', '--', '-j4', '-l4'], 'cwd': '/home/pranav/the_mapper/build/ekf_fusion', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'pranav'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pranav/ws/install/usb_cam/lib:/home/pranav/ws/install/my_robot_interfaces/lib:/home/pranav/ws/install/my_cpp_pkg/lib:/home/pranav/ws/src/my_robot_interfaces/install/my_robot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/pranav'), ('OLDPWD', '/home/pranav/the_mapper/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1194'), ('SYSTEMD_EXEC_PID', '1373'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6235'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/pranav/the_mapper/install:/home/pranav/project_robot_ws/install:/home/pranav/ws/install:/home/pranav/ws/src/my_robot_interfaces/install:/home/pranav/learning_ws/install:/home/pranav/amr/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pranav'), ('JOURNAL_STREAM', '8:23138'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'pranav'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/jarvis:@/tmp/.ICE-unix/1346,unix/jarvis:/tmp/.ICE-unix/1346'), ('INVOCATION_ID', '668f92402bcc46fdaa8f67e3bc0313e8'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.LP8WT2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/pranav/the_mapper/install/mapper_bringup:/home/pranav/the_mapper/install/mapper_description:/home/pranav/the_mapper/install/ekf_fusion:/home/pranav/amr/install/amr_bringup:/home/pranav/amr/install/amr_description:/home/pranav/ws/install/usb_cam:/home/pranav/ws/install/my_robot_bringup:/home/pranav/ws/install/mypkg:/home/pranav/ws/install/my_robot_interfaces:/home/pranav/ws/install/my_cpp_pkg:/home/pranav/project_robot_ws/install/project_robot_description:/home/pranav/project_robot_ws/install/my_robot_bringup:/home/pranav/ws/src/my_robot_interfaces/install/my_robot_interfaces:/home/pranav/learning_ws/install/mypkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:a7bfee0d-ee82-45b7-8673-1544f5862a4c'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/pranav/the_mapper/build/ekf_fusion'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pranav/ws/install/mypkg/lib/python3.10/site-packages:/home/pranav/ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/home/pranav/ws/install/my_cpp_pkg/local/lib/python3.10/dist-packages:/home/pranav/ws/src/my_robot_interfaces/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/home/pranav/learning_ws/build/mypkg:/home/pranav/learning_ws/install/mypkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/pranav/the_mapper/install/mapper_bringup:/home/pranav/the_mapper/install/mapper_description:/home/pranav/the_mapper/install/ekf_fusion:/home/pranav/amr/install/amr_bringup:/home/pranav/amr/install/amr_description:/home/pranav/ws/install/usb_cam:/home/pranav/ws/install/my_robot_bringup:/home/pranav/ws/install/my_robot_interfaces:/home/pranav/ws/install/my_cpp_pkg:/home/pranav/project_robot_ws/install/project_robot_description:/home/pranav/project_robot_ws/install/my_robot_bringup:/home/pranav/ws/src/my_robot_interfaces/install/my_robot_interfaces:/home/pranav/ws/install/mypkg:/home/pranav/learning_ws/install/mypkg:/opt/ros/humble')]), 'shell': False}
+[0.089598] (ekf_fusion) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ekf_node\x1b[0m\n'}
+[0.099908] (-) TimerEvent: {}
+[0.118122] (ekf_fusion) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ekf_node.dir/src/ekf_node.cpp.o\x1b[0m\n'}
+[0.200459] (-) TimerEvent: {}
+[0.301479] (-) TimerEvent: {}
+[0.402976] (-) TimerEvent: {}
+[0.504588] (-) TimerEvent: {}
+[0.605390] (-) TimerEvent: {}
+[0.706032] (-) TimerEvent: {}
+[0.807087] (-) TimerEvent: {}
+[0.907587] (-) TimerEvent: {}
+[1.008163] (-) TimerEvent: {}
+[1.109032] (-) TimerEvent: {}
+[1.210351] (-) TimerEvent: {}
+[1.311092] (-) TimerEvent: {}
+[1.413080] (-) TimerEvent: {}
+[1.513763] (-) TimerEvent: {}
+[1.614657] (-) TimerEvent: {}
+[1.715495] (-) TimerEvent: {}
+[1.816252] (-) TimerEvent: {}
+[1.917127] (-) TimerEvent: {}
+[2.017867] (-) TimerEvent: {}
+[2.118977] (-) TimerEvent: {}
+[2.219641] (-) TimerEvent: {}
+[2.320412] (-) TimerEvent: {}
+[2.421007] (-) TimerEvent: {}
+[2.523836] (-) TimerEvent: {}
+[2.624346] (-) TimerEvent: {}
+[2.725325] (-) TimerEvent: {}
+[2.826362] (-) TimerEvent: {}
+[2.927110] (-) TimerEvent: {}
+[3.027873] (-) TimerEvent: {}
+[3.128550] (-) TimerEvent: {}
+[3.229189] (-) TimerEvent: {}
+[3.330221] (-) TimerEvent: {}
+[3.430929] (-) TimerEvent: {}
+[3.531653] (-) TimerEvent: {}
+[3.632297] (-) TimerEvent: {}
+[3.732783] (-) TimerEvent: {}
+[3.833660] (-) TimerEvent: {}
+[3.934257] (-) TimerEvent: {}
+[4.034790] (-) TimerEvent: {}
+[4.135853] (-) TimerEvent: {}
+[4.236489] (-) TimerEvent: {}
+[4.337127] (-) TimerEvent: {}
+[4.437719] (-) TimerEvent: {}
+[4.538275] (-) TimerEvent: {}
+[4.638884] (-) TimerEvent: {}
+[4.739487] (-) TimerEvent: {}
+[4.846365] (-) TimerEvent: {}
+[4.947291] (-) TimerEvent: {}
+[5.048026] (-) TimerEvent: {}
+[5.148641] (-) TimerEvent: {}
+[5.249383] (-) TimerEvent: {}
+[5.351541] (-) TimerEvent: {}
+[5.452851] (-) TimerEvent: {}
+[5.554109] (-) TimerEvent: {}
+[5.655073] (-) TimerEvent: {}
+[5.755751] (-) TimerEvent: {}
+[5.856318] (-) TimerEvent: {}
+[5.956799] (-) TimerEvent: {}
+[6.057492] (-) TimerEvent: {}
+[6.158116] (-) TimerEvent: {}
+[6.258910] (-) TimerEvent: {}
+[6.365534] (-) TimerEvent: {}
+[6.466374] (-) TimerEvent: {}
+[6.567176] (-) TimerEvent: {}
+[6.667992] (-) TimerEvent: {}
+[6.768716] (-) TimerEvent: {}
+[6.869601] (-) TimerEvent: {}
+[6.970476] (-) TimerEvent: {}
+[7.071361] (-) TimerEvent: {}
+[7.172531] (-) TimerEvent: {}
+[7.274122] (-) TimerEvent: {}
+[7.375131] (-) TimerEvent: {}
+[7.475794] (-) TimerEvent: {}
+[7.576685] (-) TimerEvent: {}
+[7.677653] (-) TimerEvent: {}
+[7.778834] (-) TimerEvent: {}
+[7.879948] (-) TimerEvent: {}
+[7.980966] (-) TimerEvent: {}
+[8.081553] (-) TimerEvent: {}
+[8.182351] (-) TimerEvent: {}
+[8.283219] (-) TimerEvent: {}
+[8.384071] (-) TimerEvent: {}
+[8.484976] (-) TimerEvent: {}
+[8.585814] (-) TimerEvent: {}
+[8.687005] (-) TimerEvent: {}
+[8.787821] (-) TimerEvent: {}
+[8.888807] (-) TimerEvent: {}
+[8.989856] (-) TimerEvent: {}
+[9.090586] (-) TimerEvent: {}
+[9.191682] (-) TimerEvent: {}
+[9.292661] (-) TimerEvent: {}
+[9.393699] (-) TimerEvent: {}
+[9.494689] (-) TimerEvent: {}
+[9.595497] (-) TimerEvent: {}
+[9.696485] (-) TimerEvent: {}
+[9.798013] (-) TimerEvent: {}
+[9.898686] (-) TimerEvent: {}
+[9.999762] (-) TimerEvent: {}
+[10.100728] (-) TimerEvent: {}
+[10.201773] (-) TimerEvent: {}
+[10.302668] (-) TimerEvent: {}
+[10.403432] (-) TimerEvent: {}
+[10.504107] (-) TimerEvent: {}
+[10.604908] (-) TimerEvent: {}
+[10.705926] (-) TimerEvent: {}
+[10.806803] (-) TimerEvent: {}
+[10.907800] (-) TimerEvent: {}
+[11.008524] (-) TimerEvent: {}
+[11.109151] (-) TimerEvent: {}
+[11.209697] (-) TimerEvent: {}
+[11.310534] (-) TimerEvent: {}
+[11.411442] (-) TimerEvent: {}
+[11.512061] (-) TimerEvent: {}
+[11.612663] (-) TimerEvent: {}
+[11.713285] (-) TimerEvent: {}
+[11.814307] (-) TimerEvent: {}
+[11.915524] (-) TimerEvent: {}
+[12.016527] (-) TimerEvent: {}
+[12.119142] (-) TimerEvent: {}
+[12.219958] (-) TimerEvent: {}
+[12.321077] (-) TimerEvent: {}
+[12.421826] (-) TimerEvent: {}
+[12.522860] (-) TimerEvent: {}
+[12.623915] (-) TimerEvent: {}
+[12.724861] (-) TimerEvent: {}
+[12.825464] (-) TimerEvent: {}
+[12.926385] (-) TimerEvent: {}
+[13.027129] (-) TimerEvent: {}
+[13.127908] (-) TimerEvent: {}
+[13.228955] (-) TimerEvent: {}
+[13.329566] (-) TimerEvent: {}
+[13.430715] (-) TimerEvent: {}
+[13.531719] (-) TimerEvent: {}
+[13.632430] (-) TimerEvent: {}
+[13.733318] (-) TimerEvent: {}
+[13.834218] (-) TimerEvent: {}
+[13.935078] (-) TimerEvent: {}
+[14.035740] (-) TimerEvent: {}
+[14.136785] (-) TimerEvent: {}
+[14.237897] (-) TimerEvent: {}
+[14.338854] (-) TimerEvent: {}
+[14.439888] (-) TimerEvent: {}
+[14.540945] (-) TimerEvent: {}
+[14.641976] (-) TimerEvent: {}
+[14.742777] (-) TimerEvent: {}
+[14.843659] (-) TimerEvent: {}
+[14.944297] (-) TimerEvent: {}
+[15.045169] (-) TimerEvent: {}
+[15.146149] (-) TimerEvent: {}
+[15.246882] (-) TimerEvent: {}
+[15.348001] (-) TimerEvent: {}
+[15.449084] (-) TimerEvent: {}
+[15.549924] (-) TimerEvent: {}
+[15.650996] (-) TimerEvent: {}
+[15.751966] (-) TimerEvent: {}
+[15.852731] (-) TimerEvent: {}
+[15.953727] (-) TimerEvent: {}
+[16.054673] (-) TimerEvent: {}
+[16.155481] (-) TimerEvent: {}
+[16.256205] (-) TimerEvent: {}
+[16.356853] (-) TimerEvent: {}
+[16.460268] (-) TimerEvent: {}
+[16.560995] (-) TimerEvent: {}
+[16.662009] (-) TimerEvent: {}
+[16.762938] (-) TimerEvent: {}
+[16.864040] (-) TimerEvent: {}
+[16.965039] (-) TimerEvent: {}
+[17.065676] (-) TimerEvent: {}
+[17.166459] (-) TimerEvent: {}
+[17.267344] (-) TimerEvent: {}
+[17.368334] (-) TimerEvent: {}
+[17.469458] (-) TimerEvent: {}
+[17.570427] (-) TimerEvent: {}
+[17.674266] (-) TimerEvent: {}
+[17.776674] (-) TimerEvent: {}
+[17.782275] (ekf_fusion) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable ekf_node\x1b[0m\n'}
+[17.876973] (-) TimerEvent: {}
+[17.979170] (-) TimerEvent: {}
+[18.084245] (-) TimerEvent: {}
+[18.185135] (-) TimerEvent: {}
+[18.290578] (-) TimerEvent: {}
+[18.391373] (-) TimerEvent: {}
+[18.482710] (ekf_fusion) StdoutLine: {'line': b'[100%] Built target ekf_node\n'}
+[18.492499] (-) TimerEvent: {}
+[18.501348] (ekf_fusion) CommandEnded: {'returncode': 0}
+[18.542836] (ekf_fusion) JobProgress: {'identifier': 'ekf_fusion', 'progress': 'install'}
+[18.554255] (ekf_fusion) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pranav/the_mapper/build/ekf_fusion'], 'cwd': '/home/pranav/the_mapper/build/ekf_fusion', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'pranav'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pranav/ws/install/usb_cam/lib:/home/pranav/ws/install/my_robot_interfaces/lib:/home/pranav/ws/install/my_cpp_pkg/lib:/home/pranav/ws/src/my_robot_interfaces/install/my_robot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/pranav'), ('OLDPWD', '/home/pranav/the_mapper/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1194'), ('SYSTEMD_EXEC_PID', '1373'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6235'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/pranav/the_mapper/install:/home/pranav/project_robot_ws/install:/home/pranav/ws/install:/home/pranav/ws/src/my_robot_interfaces/install:/home/pranav/learning_ws/install:/home/pranav/amr/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pranav'), ('JOURNAL_STREAM', '8:23138'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'pranav'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/jarvis:@/tmp/.ICE-unix/1346,unix/jarvis:/tmp/.ICE-unix/1346'), ('INVOCATION_ID', '668f92402bcc46fdaa8f67e3bc0313e8'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.LP8WT2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/pranav/the_mapper/install/mapper_bringup:/home/pranav/the_mapper/install/mapper_description:/home/pranav/the_mapper/install/ekf_fusion:/home/pranav/amr/install/amr_bringup:/home/pranav/amr/install/amr_description:/home/pranav/ws/install/usb_cam:/home/pranav/ws/install/my_robot_bringup:/home/pranav/ws/install/mypkg:/home/pranav/ws/install/my_robot_interfaces:/home/pranav/ws/install/my_cpp_pkg:/home/pranav/project_robot_ws/install/project_robot_description:/home/pranav/project_robot_ws/install/my_robot_bringup:/home/pranav/ws/src/my_robot_interfaces/install/my_robot_interfaces:/home/pranav/learning_ws/install/mypkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:a7bfee0d-ee82-45b7-8673-1544f5862a4c'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/pranav/the_mapper/build/ekf_fusion'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pranav/ws/install/mypkg/lib/python3.10/site-packages:/home/pranav/ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/home/pranav/ws/install/my_cpp_pkg/local/lib/python3.10/dist-packages:/home/pranav/ws/src/my_robot_interfaces/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/home/pranav/learning_ws/build/mypkg:/home/pranav/learning_ws/install/mypkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/pranav/the_mapper/install/mapper_bringup:/home/pranav/the_mapper/install/mapper_description:/home/pranav/the_mapper/install/ekf_fusion:/home/pranav/amr/install/amr_bringup:/home/pranav/amr/install/amr_description:/home/pranav/ws/install/usb_cam:/home/pranav/ws/install/my_robot_bringup:/home/pranav/ws/install/my_robot_interfaces:/home/pranav/ws/install/my_cpp_pkg:/home/pranav/project_robot_ws/install/project_robot_description:/home/pranav/project_robot_ws/install/my_robot_bringup:/home/pranav/ws/src/my_robot_interfaces/install/my_robot_interfaces:/home/pranav/ws/install/mypkg:/home/pranav/learning_ws/install/mypkg:/opt/ros/humble')]), 'shell': False}
+[18.567746] (ekf_fusion) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[18.568301] (ekf_fusion) StdoutLine: {'line': b'-- Installing: /home/pranav/the_mapper/install/ekf_fusion/lib/ekf_fusion/ekf_node\n'}
+[18.579594] (ekf_fusion) StdoutLine: {'line': b'-- Set runtime path of "/home/pranav/the_mapper/install/ekf_fusion/lib/ekf_fusion/ekf_node" to ""\n'}
+[18.579806] (ekf_fusion) StdoutLine: {'line': b'-- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ament_index/resource_index/package_run_dependencies/ekf_fusion\n'}
+[18.580484] (ekf_fusion) StdoutLine: {'line': b'-- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ament_index/resource_index/parent_prefix_path/ekf_fusion\n'}
+[18.580632] (ekf_fusion) StdoutLine: {'line': b'-- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/environment/ament_prefix_path.sh\n'}
+[18.580710] (ekf_fusion) StdoutLine: {'line': b'-- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/environment/ament_prefix_path.dsv\n'}
+[18.580778] (ekf_fusion) StdoutLine: {'line': b'-- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/environment/path.sh\n'}
+[18.580842] (ekf_fusion) StdoutLine: {'line': b'-- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/environment/path.dsv\n'}
+[18.580902] (ekf_fusion) StdoutLine: {'line': b'-- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/local_setup.bash\n'}
+[18.580995] (ekf_fusion) StdoutLine: {'line': b'-- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/local_setup.sh\n'}
+[18.581108] (ekf_fusion) StdoutLine: {'line': b'-- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/local_setup.zsh\n'}
+[18.581199] (ekf_fusion) StdoutLine: {'line': b'-- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/local_setup.dsv\n'}
+[18.581263] (ekf_fusion) StdoutLine: {'line': b'-- Installing: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/package.dsv\n'}
+[18.582932] (ekf_fusion) StdoutLine: {'line': b'-- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ament_index/resource_index/packages/ekf_fusion\n'}
+[18.583773] (ekf_fusion) StdoutLine: {'line': b'-- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/cmake/ekf_fusionConfig.cmake\n'}
+[18.583942] (ekf_fusion) StdoutLine: {'line': b'-- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/cmake/ekf_fusionConfig-version.cmake\n'}
+[18.584117] (ekf_fusion) StdoutLine: {'line': b'-- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/package.xml\n'}
+[18.584272] (ekf_fusion) CommandEnded: {'returncode': 0}
+[18.592915] (-) TimerEvent: {}
+[18.650170] (ekf_fusion) JobEnded: {'identifier': 'ekf_fusion', 'rc': 0}
+[18.651885] (-) EventReactorShutdown: {}
