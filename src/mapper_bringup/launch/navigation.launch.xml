@@ -21,7 +21,7 @@
     <include file="$(find-pkg-share slam_toolbox)/launch/online_async_launch.py"/>
     <include file="$(find-pkg-share nav2_bringup)/launch/bringup_launch.py">
         <arg name="use_sim_time" value="true" />
-        <arg name="map" value="home/pranav/the_mapper/src/mapper_bringup/maps/map_1724747211.yaml" />
+        <arg name="map" value="/home/pranav/the_mapper/src/mapper_bringup/maps/map_1724747211.yaml" />
     </include>
 
 </launch>

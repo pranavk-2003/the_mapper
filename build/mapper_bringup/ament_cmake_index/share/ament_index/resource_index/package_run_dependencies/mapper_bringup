@@ -1,1 +1,1 @@
-mapper_description;robot_state_publisher;gazebo_ros;slam_toolbox;ament_lint_auto;ament_lint_common
+mapper_description;robot_state_publisher;gazebo_ros;slam_toolbox;nav2_bringup;ament_lint_auto;ament_lint_common
