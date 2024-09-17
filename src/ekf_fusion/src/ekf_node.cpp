@@ -16,6 +16,8 @@ public:
 
         state_ = Eigen::VectorXd::Zero(5);  // State: [x, y, vx, vy, yaw]
         covariance_ = Eigen::MatrixXd::Identity(5, 5);  // Covariance matrix
+        imu_bias_ = Eigen::VectorXd::Zero(2);  // IMU bias for linear acceleration [bx, by]
+        bias_correction_rate_ = 0.001;  // How quickly we correct IMU bias
     }
 
 private:
@@ -23,38 +25,48 @@ private:
     rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr lidar_sub_;
     rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr odom_pub_;
 
-    Eigen::VectorXd state_;
-    Eigen::MatrixXd covariance_;
+    Eigen::VectorXd state_;  // State vector [x, y, vx, vy, yaw]
+    Eigen::MatrixXd covariance_;  // Covariance matrix for EKF
+    Eigen::VectorXd imu_bias_;  // IMU bias for linear acceleration
     double dt_ = 0.1;  // Time step
-    double process_noise_ = 0.1;
-    double measurement_noise_ = 0.01;
+    double process_noise_ = 0.1;  // Process noise covariance
+    double measurement_noise_ = 0.01;  // Measurement noise covariance
+    double bias_correction_rate_;  // IMU bias correction rate
 
     void imuCallback(const sensor_msgs::msg::Imu::SharedPtr msg) {
         double yaw_rate = msg->angular_velocity.z;
-        double ax = msg->linear_acceleration.x;
-        double ay = msg->linear_acceleration.y;
+        double ax = msg->linear_acceleration.x - imu_bias_(0);  // Corrected IMU data
+        double ay = msg->linear_acceleration.y - imu_bias_(1);
+
+        // Bias correction for IMU drift
+        imu_bias_(0) += bias_correction_rate_ * ax;
+        imu_bias_(1) += bias_correction_rate_ * ay;
 
         predict(ax, ay, yaw_rate, dt_);
     }
 
     void lidarCallback(const sensor_msgs::msg::LaserScan::SharedPtr msg) {
-        double min_range = std::numeric_limits<double>::infinity();
-        double lidar_x = 0.0;
-        double lidar_y = 0.0;
+        std::vector<Eigen::Vector2d> lidar_points;
 
         for (size_t i = 0; i < msg->ranges.size(); i++) {
             if (msg->ranges[i] >= msg->range_min && msg->ranges[i] <= msg->range_max) {
-                if (msg->ranges[i] < min_range) {
-                    min_range = msg->ranges[i];
-                    double angle = msg->angle_min + i * msg->angle_increment;
-                    lidar_x = min_range * std::cos(angle);
-                    lidar_y = min_range * std::sin(angle);
-                }
+                double angle = msg->angle_min + i * msg->angle_increment;
+                double lidar_x = msg->ranges[i] * std::cos(angle);
+                double lidar_y = msg->ranges[i] * std::sin(angle);
+                lidar_points.emplace_back(lidar_x, lidar_y);
             }
         }
 
-        Eigen::Vector2d measurement(lidar_x, lidar_y);
-        update(measurement);
+        // If we have sufficient points from LiDAR, use them for the update
+        if (!lidar_points.empty()) {
+            Eigen::Vector2d avg_measurement = Eigen::Vector2d::Zero();
+            for (const auto& point : lidar_points) {
+                avg_measurement += point;
+            }
+            avg_measurement /= lidar_points.size();  // Average LiDAR point
+
+            update(avg_measurement);
+        }
     }
 
     void predict(double ax, double ay, double yaw_rate, double dt) {
@@ -73,8 +85,8 @@ private:
 
     void update(const Eigen::Vector2d& measurement) {
         Eigen::MatrixXd H = Eigen::MatrixXd::Zero(2, 5);
-        H(0, 0) = 1;
-        H(1, 1) = 1;
+        H(0, 0) = 1;  // For x
+        H(1, 1) = 1;  // For y
 
         Eigen::VectorXd predicted_measurement = H * state_;
         Eigen::Vector2d innovation = measurement - predicted_measurement;
@@ -119,3 +131,4 @@ int main(int argc, char** argv) {
     rclcpp::shutdown();
     return 0;
 }
+

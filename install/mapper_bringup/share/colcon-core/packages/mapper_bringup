@@ -1,1 +1,1 @@
-gazebo_ros:mapper_description:robot_state_publisher
+gazebo_ros:mapper_description:robot_state_publisher:slam_toolbox
