@@ -1,0 +1,54 @@
+ekf_filter_node:
+  frequency: 30  # Filter frequency
+  sensor_timeout: 0.1
+  two_d_mode: true  # Enforce 2D mode
+  transform_time_offset: 0.0
+  transform_timeout: 0.1
+  print_diagnostics: true
+  publish_tf: true
+  map_frame: map
+  odom_frame: odom
+  base_link_frame: base_link
+  world_frame: odom  # The odom frame is used as the world frame
+
+  # IMU configuration
+  imu0: imu_plugin/out
+  imu0_config: [false, false, false,
+                true, true, false,
+                false, false, true,
+                false, false, false, false, false]
+  imu0_queue_size: 10
+  imu0_differential: false
+  imu0_remove_gravitational_acceleration: true
+
+  # LiDAR configuration
+  # You may use /scan or appropriate topic
+  laser0: scan
+  laser0_config: [true, true, false,
+                  false, false, false,
+                  false, false, false,
+                  false, false, false, false, false]
+  laser0_queue_size: 10
+  laser0_differential: false
+
+  # Covariance matrices for process noise
+  process_noise_covariance: [
+    0.05, 0,    0,    0,    0, 
+    0,    0.05, 0,    0,    0,
+    0,    0,    0.1,  0,    0,
+    0,    0,    0,    0.1,  0,
+    0,    0,    0,    0,    0.01
+  ]
+
+  # Covariance matrices for measurement noise
+  imu0_covariance: [
+    0.1, 0,   0,   
+    0,   0.1, 0,   
+    0,   0,   0.1
+  ]
+
+  laser0_covariance: [
+    0.1, 0,   0,   
+    0,   0.1, 0,   
+    0,   0,   0.1
+  ]
