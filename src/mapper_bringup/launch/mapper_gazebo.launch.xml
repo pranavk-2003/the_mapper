@@ -10,8 +10,8 @@
  
      <!-- Launch Gazebo with the appropriate world -->
      <include file="$(find-pkg-share gazebo_ros)/launch/gazebo.launch.py">
-         <arg name="world" value="$(find-pkg-share mapper_bringup)/worlds/test_world.world" />
-     </include>
+        <arg name="world" value="$(find-pkg-share mapper_bringup)/worlds/env.world" />
+       </include>
  
      <!-- Spawn the robot in Gazebo -->
      <node pkg="gazebo_ros" exec="spawn_entity.py" args="-topic robot_description -entity mapper" />

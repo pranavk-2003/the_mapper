@@ -310,8 +310,8 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(DIRECTORY "launch" "rviz" "worlds" "DESTINATION" "share/mapper_bringup/")
-ament_cmake_symlink_install_directory("/home/pranav/the_mapper/src/mapper_bringup" DIRECTORY "launch" "rviz" "worlds" "DESTINATION" "share/mapper_bringup/")
+# install(DIRECTORY "launch" "rviz" "worlds" "models" "DESTINATION" "share/mapper_bringup/")
+ament_cmake_symlink_install_directory("/home/pranav/the_mapper/src/mapper_bringup" DIRECTORY "launch" "rviz" "worlds" "models" "DESTINATION" "share/mapper_bringup/")
 
 # install(FILES "/home/pranav/the_mapper/build/mapper_bringup/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/mapper_bringup" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/pranav/the_mapper/src/mapper_bringup" FILES "/home/pranav/the_mapper/build/mapper_bringup/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/mapper_bringup" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

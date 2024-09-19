@@ -53,14 +53,14 @@
    <link name="caster_wheel_link_1">
         <visual>
             <geometry>
-                <sphere radius="0.031" />
+                <sphere radius="0.0315" />
             </geometry>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <material name="grey" />
         </visual>
         <collision>
             <geometry>
-                <sphere radius="0.031" />
+                <sphere radius="0.0315" />
             </geometry>
             <origin xyz="0 0 0" rpy="0 0 0" />
         </collision>
@@ -74,14 +74,14 @@
     <link name="caster_wheel_link_2">
         <visual>
             <geometry>
-                <sphere radius="0.031" />
+                <sphere radius="0.0315" />
             </geometry>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <material name="grey" />
         </visual>
         <collision>
             <geometry>
-                <sphere radius="0.031" />
+                <sphere radius="0.0315" />
             </geometry>
             <origin xyz="0 0 0" rpy="0 0 0" />
         </collision>
@@ -95,14 +95,14 @@
     <link name="caster_wheel_link_3">
         <visual>
             <geometry>
-                <sphere radius="0.031" />
+                <sphere radius="0.0315" />
             </geometry>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <material name="grey" />
         </visual>
         <collision>
             <geometry>
-                <sphere radius="0.031" />
+                <sphere radius="0.0315" />
             </geometry>
             <origin xyz="0 0 0" rpy="0 0 0" />
         </collision>
@@ -116,14 +116,14 @@
     <link name="caster_wheel_link_4">
         <visual>
             <geometry>
-                <sphere radius="0.031" />
+                <sphere radius="0.0315" />
             </geometry>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <material name="grey" />
         </visual>
         <collision>
             <geometry>
-                <sphere radius="0.031  " />
+                <sphere radius="0.0315" />
             </geometry>
             <origin xyz="0 0 0" rpy="0 0 0" />
         </collision>
