@@ -7,59 +7,52 @@
 
     <gazebo reference="right_wheel_link">
         <material>Gazebo/Grey</material>
+        <mu1 value="0.3" />
+        <mu2 value="0.3" />
     </gazebo>
 
     <gazebo reference="left_wheel_link">
         <material>Gazebo/Grey</material>
+        <mu1 value="0.3" />
+        <mu2 value="0.3" />
+    </gazebo>
+    <gazebo reference="rightb_wheel_link">
+        <material>Gazebo/Grey</material>
+        <mu1 value="0.3" />
+        <mu2 value="0.3" />
     </gazebo>
 
-    <gazebo reference="caster_wheel_link_1">
+    <gazebo reference="leftb_wheel_link">
         <material>Gazebo/Grey</material>
-        <mu1 value="0.1" />
-        <mu2 value="0.1" />
-    </gazebo>
-    <gazebo reference="caster_wheel_link_2">
-        <material>Gazebo/Grey</material>
-        <mu1 value="0.1" />
-        <mu2 value="0.1" />
-    </gazebo>
-    <gazebo reference="caster_wheel_link_3">
-        <material>Gazebo/Grey</material>
-        <mu1 value="0.1" />
-        <mu2 value="0.1" />
-    </gazebo>
-    <gazebo reference="caster_wheel_link_4">
-        <material>Gazebo/Grey</material>
-        <mu1 value="0.1" />
-        <mu2 value="0.1" />
+        <mu1 value="0.3" />
+        <mu2 value="0.3" />
     </gazebo>
     <gazebo reference="lidar_link">
         <material>Gazebo/Grey</material>
-        <mu1 value="0.1" />
-        <mu2 value="0.1" />
     </gazebo>
-
     <gazebo>
-        <plugin name="diff_drive_controller" filename="libgazebo_ros_diff_drive.so">
-            <!-- Update rate in Hz -->
+        <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_diff_drive.so">
             <update_rate>50</update_rate>
-            <!-- wheels -->
+            <num_wheel_pairs>2</num_wheel_pairs>
+            <left_joint>base_leftb_wheel_joint</left_joint>
+            <right_joint>base_rightb_wheel_joint</right_joint>
             <left_joint>base_left_wheel_joint</left_joint>
             <right_joint>base_right_wheel_joint</right_joint>
-            <!-- kinematics -->
-            <wheel_separation>0.39</wheel_separation>
-            <wheel_diameter>0.127</wheel_diameter>
-            <!-- output -->
+            <wheel_separation>0.015</wheel_separation>
+            <!-- <wheelSeparation>0.015</wheelSeparation>
+            <wheelDiameter>0.05</wheelDiameter> -->
+            <wheel_diameter>0.05</wheel_diameter>
+            <!-- <max_wheel_torque>10</max_wheel_torque>
+            <max_wheel_accleration>1</max_wheel_accleration> -->
             <publish_odom>true</publish_odom>
             <publish_odom_tf>true</publish_odom_tf>
             <publish_wheel_tf>true</publish_wheel_tf>
-            <odometry_topic>odom</odometry_topic>
             <odometry_frame>odom</odometry_frame>
+            <odometry_topic>odom</odometry_topic>
             <robot_base_frame>base_footprint</robot_base_frame>
-            <max_speed>10.0</max_speed> 
-            <max_turning_speed>2.0</max_turning_speed>
         </plugin>
     </gazebo>
+    
     <gazebo reference="imu_link">
         <gravity>true</gravity>
         <sensor name="imu_sensor" type="imu">
@@ -68,7 +61,7 @@
             <visualize>true</visualize>
             <topic>imu1</topic>
             <plugin name="imu_plugin" filename="libgazebo_ros_imu_sensor.so">
-                <topicName>imu</topicName>
+                <topicName>imu1</topicName>
                 <bodyName>imu_link</bodyName>
                 <updateRateHZ>10.0</updateRateHZ>
                 <gaussianNoise>0.0</gaussianNoise>

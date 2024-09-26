@@ -2,30 +2,30 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" >
 
     <joint name="lidar_joint" type="fixed">
-        <parent link="base_link"/>
+        <parent link="base_footprint"/>
         <child link="lidar_link"/>
-        <origin xyz="0 0 0.21" rpy="0 0 0"/>
+        <origin xyz="0 0 0.145" rpy="0 0 0"/>
     </joint>
 
     <link name="lidar_link">
         <visual>
             <geometry>
-                <cylinder radius="0.05" length="0.05"/>
+                <cylinder radius="0.05" length="0.03"/>
             </geometry>
             <material name="grey"/>
         </visual>
         <collision>
             <geometry>
-                <cylinder radius="0.05" length="0.05"/>
+                <cylinder radius="0.05" length="0.03"/>
             </geometry>
         </collision>
-        <xacro:box_inertia m="5.0" l="${2*base_length}" w="${2*base_width}" h="${2*base_height}"
-                           xyz="0 0 ${base_height / 2.0}" rpy="0 0 0" />
+        <xacro:cylinder_inertia m="1.0" r="0.05" h="0.03" 
+                                    xyz="0 0 0.095" rpy="0 0 0" />
     </link>
     <joint name="imu_joint" type="fixed">
-        <parent link="base_link"/>
+        <parent link="base_footprint"/>
         <child link="imu_link"/>
-        <origin xyz="0 0 0.1" rpy="0 0 0"/>
+        <origin xyz="0 0 0.09" rpy="0 0 0"/>
     </joint>
     
     <link name="imu_link">

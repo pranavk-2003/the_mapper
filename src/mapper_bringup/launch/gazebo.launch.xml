@@ -1,16 +1,26 @@
 <launch>
+    <!-- Define the URDF path -->
     <let name="urdf_path" 
          value="$(find-pkg-share mapper_description)/urdf/mapper.urdf.xacro" />
 
+    <!-- Robot State Publisher Node -->
     <node pkg="robot_state_publisher" exec="robot_state_publisher">
         <param name="robot_description"
                value="$(command 'xacro $(var urdf_path)')" />
+        <param name="use_sim_time" value="true"/>
     </node>
 
+    <!-- Include Gazebo Launch File -->
     <include file="$(find-pkg-share gazebo_ros)/launch/gazebo.launch.py">
-     <arg name="world" value="$(find-pkg-share mapper_bringup)/worlds/env.world" />
+        <arg name="world" value="$(find-pkg-share mapper_bringup)/worlds/env.world" />
     </include>
 
+    <!-- Gazebo Spawn Entity Node -->
     <node pkg="gazebo_ros" exec="spawn_entity.py"
-          args="-topic robot_description -entity mapper" />
+          args="-topic robot_description -entity mapper">
+        <!-- Add the use_sim_time parameter here -->
+        <!-- <param name="use_sim_time" value="true"/> -->
+    </node>
+
+    
 </launch>
