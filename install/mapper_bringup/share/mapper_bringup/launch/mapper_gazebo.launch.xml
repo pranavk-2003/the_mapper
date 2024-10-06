@@ -15,19 +15,10 @@
  
      <!-- Spawn the robot in Gazebo -->
      <node pkg="gazebo_ros" exec="spawn_entity.py" args="-topic robot_description -entity mapper" />
- 
-     <!-- Launch SLAM Toolbox -->
-     <include file="$(find-pkg-share slam_toolbox)/launch/online_async_launch.py" />
- 
-     <!-- Launch EKF localization -->
-     <node pkg="robot_localization" exec="ekf_node" name="ekf_node" output="screen">
-        <param name="use_sim_time" value="true"/>
-        <param name="config_file" value="$(find-pkg-share mapper_bringup)/config/ekf_config.yaml" />
-        <remap from="/imu/data" to="/imu_plugin/out"/> <!-- Remap to match expected topic names -->
-     </node>
     
  
      <!-- Launch RViz for visualization -->
      <node pkg="rviz2" exec="rviz2" output="screen" args="-d $(var rviz_config_path)" />
  </launch>
+ 
  

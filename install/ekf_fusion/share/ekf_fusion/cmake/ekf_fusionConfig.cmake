@@ -16,7 +16,7 @@ set(_ekf_fusion_CONFIG_INCLUDED TRUE)
 
 # output package information
 if(NOT ekf_fusion_FIND_QUIETLY)
-  message(STATUS "Found ekf_fusion: 0.0.0 (${ekf_fusion_DIR})")
+  message(STATUS "Found ekf_fusion: 0.0.1 (${ekf_fusion_DIR})")
 endif()
 
 # warn when using a deprecated package

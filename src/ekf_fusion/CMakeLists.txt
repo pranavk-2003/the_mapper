@@ -1,34 +1,14 @@
-cmake_minimum_required(VERSION 3.8)
+cmake_minimum_required(VERSION 3.5)
 project(ekf_fusion)
-
-if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
-  add_compile_options(-Wall -Wextra -Wpedantic)
-endif()
 
 # Find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(sensor_msgs REQUIRED)
-find_package(nav_msgs REQUIRED)
-find_package(std_msgs REQUIRED)
-find_package(Eigen3 REQUIRED)
+find_package(robot_localization REQUIRED)
 
-# Add executable
-add_executable(ekf_node src/ekf_node.cpp)
-
-# Link Eigen3
-target_link_libraries(ekf_node Eigen3::Eigen)
-
-# Specify dependencies
-ament_target_dependencies(ekf_node rclcpp sensor_msgs nav_msgs)
-
-# Install target
-install(TARGETS ekf_node DESTINATION lib/${PROJECT_NAME})
-
-if(BUILD_TESTING)
-  find_package(ament_lint_auto REQUIRED)
-  set(ament_cmake_cpplint_FOUND TRUE)
-  ament_lint_auto_find_test_dependencies()
-endif()
+# Install launch files
+install(DIRECTORY launch config
+  DESTINATION share/${PROJECT_NAME}
+)
 
 ament_package()

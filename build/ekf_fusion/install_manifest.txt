@@ -1,4 +1,5 @@
-/home/pranav/the_mapper/install/ekf_fusion/lib/ekf_fusion/ekf_node
+/home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/launch/ekf_launch.py
+/home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/config/ekf.yaml
 /home/pranav/the_mapper/install/ekf_fusion/share/ament_index/resource_index/package_run_dependencies/ekf_fusion
 /home/pranav/the_mapper/install/ekf_fusion/share/ament_index/resource_index/parent_prefix_path/ekf_fusion
 /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/environment/ament_prefix_path.sh

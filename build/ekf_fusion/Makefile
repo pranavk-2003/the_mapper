@@ -197,43 +197,6 @@ ekf_fusion_uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ekf_fusion_uninstall.dir/build.make CMakeFiles/ekf_fusion_uninstall.dir/build
 .PHONY : ekf_fusion_uninstall/fast
 
-#=============================================================================
-# Target rules for targets named ekf_node
-
-# Build rule for target.
-ekf_node: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ekf_node
-.PHONY : ekf_node
-
-# fast build rule for target.
-ekf_node/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ekf_node.dir/build.make CMakeFiles/ekf_node.dir/build
-.PHONY : ekf_node/fast
-
-src/ekf_node.o: src/ekf_node.cpp.o
-.PHONY : src/ekf_node.o
-
-# target to build an object file
-src/ekf_node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ekf_node.dir/build.make CMakeFiles/ekf_node.dir/src/ekf_node.cpp.o
-.PHONY : src/ekf_node.cpp.o
-
-src/ekf_node.i: src/ekf_node.cpp.i
-.PHONY : src/ekf_node.i
-
-# target to preprocess a source file
-src/ekf_node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ekf_node.dir/build.make CMakeFiles/ekf_node.dir/src/ekf_node.cpp.i
-.PHONY : src/ekf_node.cpp.i
-
-src/ekf_node.s: src/ekf_node.cpp.s
-.PHONY : src/ekf_node.s
-
-# target to generate assembly for a file
-src/ekf_node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ekf_node.dir/build.make CMakeFiles/ekf_node.dir/src/ekf_node.cpp.s
-.PHONY : src/ekf_node.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -249,10 +212,6 @@ help:
 	@echo "... test"
 	@echo "... ekf_fusion_uninstall"
 	@echo "... uninstall"
-	@echo "... ekf_node"
-	@echo "... src/ekf_node.o"
-	@echo "... src/ekf_node.i"
-	@echo "... src/ekf_node.s"
 .PHONY : help
 
 

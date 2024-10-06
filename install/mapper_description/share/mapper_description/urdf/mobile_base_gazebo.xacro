@@ -10,7 +10,9 @@
         <mu1 value="0.7" /> 
         <mu2 value="0.5" /> 
     </gazebo>
-
+    <gazebo reference="base_sonar_front">
+        <material>Gazebo/Grey</material>
+    </gazebo>
     <gazebo reference="left_wheel_link">
         <material>Gazebo/Grey</material>
         <mu1 value="0.7" />

@@ -19,6 +19,7 @@
           <geometry>
             <box size="0.01 0.01 0.01"/>
           </geometry>
+          <material name="grey"/>
         </visual>
         <inertial>
           <mass value="1e-5" />
