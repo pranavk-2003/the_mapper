@@ -1,0 +1,4 @@
+Invoking command in '/home/pranav/the_mapper/build/ekf_fusion': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pranav/the_mapper/build/ekf_fusion -- -j4 -l4
+Invoked command in '/home/pranav/the_mapper/build/ekf_fusion' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pranav/the_mapper/build/ekf_fusion -- -j4 -l4
+Invoking command in '/home/pranav/the_mapper/build/ekf_fusion': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pranav/the_mapper/build/ekf_fusion
+Invoked command in '/home/pranav/the_mapper/build/ekf_fusion' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pranav/the_mapper/build/ekf_fusion

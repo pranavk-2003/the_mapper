@@ -1,0 +1,22 @@
+[0.017s] Invoking command in '/home/pranav/the_mapper/build/ekf_fusion': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pranav/the_mapper/build/ekf_fusion -- -j4 -l4
+[0.091s] [100%] Built target ekf_node
+[0.107s] Invoked command in '/home/pranav/the_mapper/build/ekf_fusion' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pranav/the_mapper/build/ekf_fusion -- -j4 -l4
+[0.142s] Invoking command in '/home/pranav/the_mapper/build/ekf_fusion': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pranav/the_mapper/build/ekf_fusion
+[0.151s] -- Install configuration: ""
+[0.151s] -- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/lib/ekf_fusion/ekf_node
+[0.151s] -- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ament_index/resource_index/package_run_dependencies/ekf_fusion
+[0.152s] -- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ament_index/resource_index/parent_prefix_path/ekf_fusion
+[0.152s] -- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/environment/ament_prefix_path.sh
+[0.152s] -- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/environment/ament_prefix_path.dsv
+[0.152s] -- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/environment/path.sh
+[0.152s] -- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/environment/path.dsv
+[0.153s] -- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/local_setup.bash
+[0.153s] -- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/local_setup.sh
+[0.153s] -- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/local_setup.zsh
+[0.153s] -- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/local_setup.dsv
+[0.153s] -- Installing: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/package.dsv
+[0.153s] -- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ament_index/resource_index/packages/ekf_fusion
+[0.153s] -- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/cmake/ekf_fusionConfig.cmake
+[0.153s] -- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/cmake/ekf_fusionConfig-version.cmake
+[0.153s] -- Up-to-date: /home/pranav/the_mapper/install/ekf_fusion/share/ekf_fusion/package.xml
+[0.156s] Invoked command in '/home/pranav/the_mapper/build/ekf_fusion' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pranav/the_mapper/build/ekf_fusion
