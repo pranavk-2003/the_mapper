@@ -36,7 +36,7 @@
     </gazebo>
     <gazebo>
         <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_diff_drive.so">
-            <update_rate>100</update_rate>
+            <update_rate>50</update_rate>
             <num_wheel_pairs>2</num_wheel_pairs>
             <left_joint>base_leftb_wheel_joint</left_joint>
             <right_joint>base_rightb_wheel_joint</right_joint>
