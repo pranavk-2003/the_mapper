@@ -7,7 +7,6 @@
       },
       "includePath": [
         "/opt/ros/humble/include/**",
-        "/home/pranav/the_mapper/src/ekf_fusion/include/**",
         "/usr/include/**"
       ],
       "name": "ROS",

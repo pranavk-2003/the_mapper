@@ -1,0 +1,4 @@
+source;share/ground_mapper/local_setup.bash
+source;share/ground_mapper/local_setup.dsv
+source;share/ground_mapper/local_setup.sh
+source;share/ground_mapper/local_setup.zsh
