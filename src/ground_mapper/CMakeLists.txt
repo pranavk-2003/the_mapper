@@ -19,11 +19,8 @@ add_executable(pointcloud_saver src/pointcloud_saver.cpp)
 ament_target_dependencies(pointcloud_saver rclcpp sensor_msgs pcl_conversions)
 target_link_libraries(pointcloud_saver ${PCL_LIBRARIES})
 
-install(TARGETS
-  pointcloud_saver
+install(TARGETS pointcloud_saver
   DESTINATION lib/${PROJECT_NAME})
-
-
 # Link the dependencies
 ament_target_dependencies(mapping_node rclcpp sensor_msgs nav_msgs tf2 tf2_ros)
 
@@ -35,6 +32,7 @@ install(TARGETS mapping_node
 install(DIRECTORY launch
   DESTINATION share/${PROJECT_NAME}
 )
+
 
 # ament package
 ament_package()

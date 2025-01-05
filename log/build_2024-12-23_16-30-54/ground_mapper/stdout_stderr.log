@@ -1,0 +1,8 @@
+[35m[1mConsolidate compiler generated dependencies of target mapping_node[0m
+gmake[2]: *** No rule to make target 'CMakeFiles/test1.dir/build'.  Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/test1.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[35m[1mConsolidate compiler generated dependencies of target pointcloud_saver[0m
+[ 50%] Built target mapping_node
+[100%] Built target pointcloud_saver
+gmake: *** [Makefile:146: all] Error 2

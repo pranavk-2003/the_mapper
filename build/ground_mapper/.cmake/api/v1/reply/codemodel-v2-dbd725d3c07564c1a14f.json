@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-c4a312b32becf9bfa9c7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ground_mapper",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ground_mapper_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ground_mapper_uninstall-d1a3b48b0006218a112e.json",
+					"name" : "ground_mapper_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mapping_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mapping_node-2aa0ff76ddf6707e6e0d.json",
+					"name" : "mapping_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pointcloud_saver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pointcloud_saver-f543ff1a1f90d6a3cd19.json",
+					"name" : "pointcloud_saver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-38c6647a36b1c224ff77.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/pranav/the_mapper/build/ground_mapper",
+		"source" : "/home/pranav/the_mapper/src/ground_mapper"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

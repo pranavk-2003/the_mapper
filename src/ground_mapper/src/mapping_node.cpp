@@ -15,7 +15,7 @@ public:
         laser_sub_ = this->create_subscription<sensor_msgs::msg::LaserScan>(
             "/scan", 10, std::bind(&MappingNode::laserCallback, this, std::placeholders::_1));
         imu_sub_ = this->create_subscription<sensor_msgs::msg::Imu>(
-            "/imu", 10, std::bind(&MappingNode::imuCallback, this, std::placeholders::_1));
+            "/imu_plugin/out", 10, std::bind(&MappingNode::imuCallback, this, std::placeholders::_1));
 
         // Publisher for point cloud
         point_cloud_pub_ = this->create_publisher<sensor_msgs::msg::PointCloud2>("/assembled_cloud", 10);

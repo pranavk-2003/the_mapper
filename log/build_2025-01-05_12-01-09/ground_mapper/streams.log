@@ -1,0 +1,27 @@
+[0.021s] Invoking command in '/home/pranav/the_mapper/build/ground_mapper': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/pranav/the_mapper/build/ground_mapper -- -j4 -l4
+[0.240s] [ 50%] Built target mapping_node
+[0.293s] [100%] Built target pointcloud_saver
+[0.307s] Invoked command in '/home/pranav/the_mapper/build/ground_mapper' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/pranav/the_mapper/build/ground_mapper -- -j4 -l4
+[0.312s] Invoking command in '/home/pranav/the_mapper/build/ground_mapper': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/pranav/the_mapper/build/ground_mapper
+[0.322s] -- Install configuration: ""
+[0.323s] -- Execute custom install script
+[0.325s] -- Up-to-date symlink: /home/pranav/the_mapper/install/ground_mapper/lib/ground_mapper/pointcloud_saver
+[0.325s] -- Up-to-date symlink: /home/pranav/the_mapper/install/ground_mapper/lib/ground_mapper/mapping_node
+[0.327s] -- Up-to-date symlink: /home/pranav/the_mapper/install/ground_mapper/share/ground_mapper/launch/ground_mapping.launch.py
+[0.328s] -- Up-to-date symlink: /home/pranav/the_mapper/install/ground_mapper/share/ground_mapper/launch/octomap_server.launch.py
+[0.329s] -- Up-to-date symlink: /home/pranav/the_mapper/install/ground_mapper/share/ament_index/resource_index/package_run_dependencies/ground_mapper
+[0.330s] -- Up-to-date symlink: /home/pranav/the_mapper/install/ground_mapper/share/ament_index/resource_index/parent_prefix_path/ground_mapper
+[0.331s] -- Up-to-date symlink: /home/pranav/the_mapper/install/ground_mapper/share/ground_mapper/environment/ament_prefix_path.sh
+[0.331s] -- Up-to-date symlink: /home/pranav/the_mapper/install/ground_mapper/share/ground_mapper/environment/ament_prefix_path.dsv
+[0.332s] -- Up-to-date symlink: /home/pranav/the_mapper/install/ground_mapper/share/ground_mapper/environment/path.sh
+[0.332s] -- Up-to-date symlink: /home/pranav/the_mapper/install/ground_mapper/share/ground_mapper/environment/path.dsv
+[0.333s] -- Up-to-date symlink: /home/pranav/the_mapper/install/ground_mapper/share/ground_mapper/local_setup.bash
+[0.333s] -- Up-to-date symlink: /home/pranav/the_mapper/install/ground_mapper/share/ground_mapper/local_setup.sh
+[0.334s] -- Up-to-date symlink: /home/pranav/the_mapper/install/ground_mapper/share/ground_mapper/local_setup.zsh
+[0.334s] -- Up-to-date symlink: /home/pranav/the_mapper/install/ground_mapper/share/ground_mapper/local_setup.dsv
+[0.334s] -- Symlinking: /home/pranav/the_mapper/install/ground_mapper/share/ground_mapper/package.dsv
+[0.346s] -- Up-to-date symlink: /home/pranav/the_mapper/install/ground_mapper/share/ament_index/resource_index/packages/ground_mapper
+[0.347s] -- Up-to-date symlink: /home/pranav/the_mapper/install/ground_mapper/share/ground_mapper/cmake/ground_mapperConfig.cmake
+[0.348s] -- Up-to-date symlink: /home/pranav/the_mapper/install/ground_mapper/share/ground_mapper/cmake/ground_mapperConfig-version.cmake
+[0.348s] -- Up-to-date symlink: /home/pranav/the_mapper/install/ground_mapper/share/ground_mapper/package.xml
+[0.365s] Invoked command in '/home/pranav/the_mapper/build/ground_mapper' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/pranav/the_mapper/build/ground_mapper

@@ -1,2 +1,1 @@
-source;share/ground_mapper/environment/ament_prefix_path.sh
-source;share/ground_mapper/environment/path.sh
+/home/pranav/the_mapper/build/ground_mapper/ament_cmake_environment_hooks/local_setup.dsv

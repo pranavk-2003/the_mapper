@@ -1,0 +1,4 @@
+Invoking command in '/home/pranav/the_mapper/build/ground_mapper': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/pranav/the_mapper/build/ground_mapper -- -j4 -l4
+Invoked command in '/home/pranav/the_mapper/build/ground_mapper' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/pranav/the_mapper/build/ground_mapper -- -j4 -l4
+Invoking command in '/home/pranav/the_mapper/build/ground_mapper': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/pranav/the_mapper/build/ground_mapper
+Invoked command in '/home/pranav/the_mapper/build/ground_mapper' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/pranav/the_mapper/build/ground_mapper

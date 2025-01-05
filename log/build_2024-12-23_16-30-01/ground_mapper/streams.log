@@ -1,0 +1,13 @@
+[0.072s] Invoking command in '/home/pranav/the_mapper/build/ground_mapper': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/pranav/the_mapper/build/ground_mapper -- -j4 -l4
+[0.302s] [35m[1mConsolidate compiler generated dependencies of target mapping_node[0m
+[0.316s] [35m[1mConsolidate compiler generated dependencies of target pointcloud_saver[0m
+[0.439s] [ 25%] [32mBuilding CXX object CMakeFiles/mapping_node.dir/src/mapping_node.cpp.o[0m
+[0.483s] [ 50%] [32mBuilding CXX object CMakeFiles/pointcloud_saver.dir/src/pointcloud_saver.cpp.o[0m
+[20.424s] [ 75%] [32m[1mLinking CXX executable pointcloud_saver[0m
+[20.583s] [100%] [32m[1mLinking CXX executable mapping_node[0m
+[21.351s] [100%] Built target mapping_node
+[21.491s] [100%] Built target pointcloud_saver
+[21.542s] gmake[2]: *** No rule to make target 'CMakeFiles/test1.dir/build'.  Stop.
+[21.543s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/test1.dir/all] Error 2
+[21.547s] gmake: *** [Makefile:146: all] Error 2
+[21.598s] Invoked command in '/home/pranav/the_mapper/build/ground_mapper' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/pranav/the_mapper/build/ground_mapper -- -j4 -l4

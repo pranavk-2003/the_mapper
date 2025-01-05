@@ -1,0 +1,10 @@
+[0m** WARNING ** io features related to pcap will be disabled[0m
+[0m** WARNING ** io features related to png will be disabled[0m
+[31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/symlink_install/ament_cmake_symlink_install_targets.cmake:67 (message):
+  ament_cmake_symlink_install_targets() 'test1' is not a target
+Call Stack (most recent call first):
+  /opt/ros/humble/share/ament_cmake_core/cmake/symlink_install/install.cmake:37 (ament_cmake_symlink_install_targets)
+  CMakeLists.txt:24 (install)
+
+[0m
+gmake: *** [Makefile:322: cmake_check_build_system] Error 1
